@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
 /* Wander Over Yonder тип шрифту fantasy */
 @font-face {
-	font-family: 'Wander Over Yonder';
+	font-family: "Wander Over Yonder";
 	src: url("/fonts/WanderOverYonder.woff2") format('woff2'),
 	url("/fonts/WanderOverYonder.woff") format('woff');
 	font-weight: normal;

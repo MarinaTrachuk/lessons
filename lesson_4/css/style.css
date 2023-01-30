@@ -14,7 +14,7 @@
 }
 /* CoquetteC тип шрифту fantasy */
 @font-face {
-	font-family: 'CoquetteC';
+	font-family: "CoquetteC";
 	src: url("/fonts/CoquetteC.woff2") format('woff2'),
 	url("/fonts/CoquetteC.woff") format('woff');
 	font-weight: normal;

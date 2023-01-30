@@ -42,7 +42,7 @@ h1 {
 .base__title,
 .history__title,
 .nature__title  {
-	font-family: "Wander Over Yonder";
+	font-family: "Wander Over Yonder" fantasy;
 	font-size: 30px;
 	font-weight: 500;
 	color: blue;

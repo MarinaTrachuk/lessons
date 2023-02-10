@@ -69,12 +69,14 @@ body {
 .image__1 {
 	width: 50%;
 	padding-right: 15px;
+	border-radius: 5px;
 	font-size: 14px;
 }
 
 .image__2 {
 	width: 50%;
 	padding-left: 15px;
+	border-radius: 5px;
 	font-size: 14px;
 }
 

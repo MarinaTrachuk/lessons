@@ -120,13 +120,13 @@ body {
 }
 
 .carusel{
-	text-align: center;
+   text-align: center;
    font-size: 0px;
    margin-bottom: 64px;
 }
 
 .black {
-	margin-right: 10px;
+   margin-right: 10px;
    display: inline-block;
    width: 6px;
    height: 6px;
@@ -135,7 +135,7 @@ body {
 }
 
 .white {
-	background: #fff;
+   background: #fff;
    border: 1px solid #C4C4C4;
 }
 

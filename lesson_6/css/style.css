@@ -12,7 +12,7 @@ body {
 }
 
 .article{
-	padding: 30px 0;
+	padding: 30px 0 0 0;
 	margin-bottom: 80px;
 }
 
@@ -120,14 +120,23 @@ body {
 }
 
 .carusel{
-	margin-bottom: 64px;
-	font-size: 0;
+	text-align: center;
+   font-size: 0px;
+   margin-bottom: 64px;
 }
 
-.img__4 {
-	display: block;
-	max-width: 100%;
-	margin: 0 auto 64px;
+.black {
+	margin-right: 10px;
+   display: inline-block;
+   width: 6px;
+   height: 6px;
+   background: #212529;
+   border-radius: 50%;
+}
+
+.white {
+	background: #fff;
+   border: 1px solid #C4C4C4;
 }
 
 /*Відпрацювання CSS властивостей оформлення блоків*/

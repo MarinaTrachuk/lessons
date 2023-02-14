@@ -24,6 +24,7 @@
 }
 
 .vence__date {
+	max-width: 68px;
 	margin-bottom: 15px;
 }
 

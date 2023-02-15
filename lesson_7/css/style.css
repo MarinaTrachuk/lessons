@@ -82,12 +82,19 @@ ul{
 
 .ellipse {
 	margin-right: 136px;
-	}
+	max-width: 33.3333%;
+}
 
 .checkmark,
 .cross,
 .arrow {
 	margin-right: 91px;
+	max-width: 33.3333%;
+}
+
+.checkmark__green,
+.star {
+	max-width: 33.3333%;
 }
 
 .ellipse li:last-child,

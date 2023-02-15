@@ -187,7 +187,8 @@ ul{
 	margin-bottom: 35px;
 }
 
-.slider__button {
+.button {
+	display: inline-block;
 	background-color: #3056D3;
 	border-radius: 30px;
 	line-height: 1.5;

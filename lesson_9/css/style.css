@@ -1,0 +1,108 @@
+@import url("reset.css");
+
+.page {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.conteiner {
+	max-width: 1200px;
+	margin: 0 auto 50px;
+	padding: 20px;
+	background-color: #98AAE9;
+}
+
+p {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.icons span,
+.design span,
+.content span {
+	font-size: 40px;
+	font-weight: 900;
+}
+
+img {
+	margin-right: 15px;
+	vertical-align: top;
+}
+.element:last-child,
+.design__element div:last-child {
+	margin-bottom: 0;
+}
+.element {
+	display: inline-block;
+	margin-bottom: 15px;
+}
+
+.element img{
+	max-width: 210px;
+	border-radius: 5px;
+}
+
+.design__element div{
+	margin-bottom: 15px;
+}
+.design__1,
+.design__2,
+.design__3,
+.design__4,
+.design__5,
+.design__6,
+.design__7,
+.design__8,
+.design__9,
+.design__10 {
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+	margin-right: 15px;
+	vertical-align: top;
+}
+
+.design__1 {
+	background: url(../img/icons/design_1.webp) top / contain no-repeat;
+}
+
+.design__2 {
+	background: url(../img/icons/design_2.webp) top / contain no-repeat;
+
+}
+
+.design__3 {
+	background: url(../img/icons/design_3.webp) top / contain no-repeat;
+}
+
+.design__4 {
+	background: url(../img/icons/dotted.webp) top / contain no-repeat #98AAE9;
+}
+
+.design__5 {
+	background: url(../img/icons/design_5.webp) top / contain no-repeat;
+	
+}
+
+.design__6 {
+	background: url(../img/icons/design_6.webp) top / contain no-repeat;
+}
+
+.design__7 {
+	background: url(../img/icons/design_7.webp) top / contain no-repeat;
+}
+
+.design__8 {
+	background: url(../img/icons/design_8.webp) top / contain no-repeat #092489;
+}
+
+.design__9 {
+	background: url(../img/icons/design_9.webp) top / contain no-repeat #092489;
+}
+
+.design__10 {
+	background: url(../img/icons/group_1.svg), url(../img/icons/group_2.svg) 0 0 no-repeat;
+	width: 360px;
+	height: 640px;
+}

@@ -36,11 +36,13 @@ img {
 .element {
 	display: inline-block;
 	margin-bottom: 15px;
+	font-size: 0;
 }
 
 .element img{
 	max-width: 210px;
 	border-radius: 5px;
+	font-size: 20px;
 }
 
 .design__element div{

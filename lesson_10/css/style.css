@@ -19,6 +19,13 @@ body {
 	padding: 37px 0;
 }
 
+.menu,
+.social,
+.tab,
+.footer__menu,
+.footer__social{
+	display: inline-block;
+}
 .social__item,
 .menu__item,
 .tab__item{

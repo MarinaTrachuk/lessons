@@ -184,6 +184,9 @@ background-color: #E5E5E5;
 	color: #FFFFFF;
 	text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.14);
 }
+.sub__button:hover{
+	background-color: #0a1c57;
+}
 
 /*Не знаю чи можна так робити чи ні*/
 .dropdown__link_frame::after {

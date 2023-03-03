@@ -1,0 +1,227 @@
+@import url("reset.css");
+@import url("common.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap");
+
+/*За флекси не сваріться, намагаюсь для себе в них розібратись))
+те що ми їх ще не вчили знаю)) але так хочеться щоб все було по
+макету і гарненько))*/
+
+body {
+font-family: "Inter", sans-serif;
+font-weight: 600;
+line-height: 1.5;
+color: #212B36;
+background-color: #E5E5E5;
+}
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+
+.header {
+	background-color: #ffff;
+	padding: 30px 0;
+}
+
+
+[class*=__container] {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+[class*=__link]:hover {
+	text-decoration: underline;
+	color: #3056D3;
+}
+
+.header__box{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.category__link{
+	padding-bottom: 70px;
+}
+
+.category__items{
+	background: #F4F7FF;
+	border-radius: 5px;
+	padding: 9px 20.39px;
+	position: relative;
+}
+
+.dropdown{
+	max-width: 180px;
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	top: 200%;
+	left: 0;
+	right: 0;
+	background: #FFFFFF;
+	border: 0.5px solid #E7E7E7;
+	border-radius: 5px;
+	padding: 22px 0 22px 24px;
+	z-index: 1;
+}
+
+.dropdown::before{
+	content: '';
+	position: absolute;
+   display: block;
+   width: 32px;
+   height: 20px;
+   top: -13px;
+   left: 15px;
+   background: url(../image/icons/tringles.svg) 0 0 / auto no-repeat;
+	z-index: 1;
+}
+
+.dropdown__item:not(:last-child),
+.sub__item:not(:last-child){
+	margin-bottom: 13px;
+}
+
+.dropdown__item,
+.sub__item{
+	font-weight: 500;
+	color: #637381;
+}
+
+.category__items:hover .dropdown,
+.dropdown__item:hover .sub {
+	opacity: 1;
+	visibility: visible;
+}
+
+.dropdown__sub-categories{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.sub{
+	position: absolute;
+   top: 20px;
+   left: 173px;
+   padding: 30px;
+   background-color: #fff;
+   border: 0.5px solid #e7e7e7;
+   border-radius: 5px;
+   z-index: 2;
+   min-width: 652px;
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.5s;
+}
+
+.sub__list:not(:last-child){
+	margin-right: 69px;
+}
+
+.sub__title{
+	color: #212B36;
+	margin-bottom: 20px;
+}
+
+.sub__box{
+	background: url(../image/banner_two.webp), url(../image/banner_one.webp) 0 0 no-repeat;
+	width: 220px;
+	height: 248px;
+}
+.category__link::after{
+	content: '';
+	background: url(../image/icons/frame.svg) 0 0 no-repeat;
+	width: 11px;
+	height: 6px;
+	display: inline-block;
+	margin-left: 13px;
+	position: relative;
+	bottom: 3px;
+}
+
+.sub__box{
+	position: relative;
+}
+
+.sub__sale{
+	position: absolute;
+	top: 65px;
+   left: 66px;
+   text-align: center;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 1.2;
+	color: #FFFFFF;
+	text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.22)
+}
+
+.sub__text{
+	position: absolute;
+	top: 113px;
+	left: 45px;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1.2;
+	color: #FFFFFF;
+	text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.24);
+}
+
+.sub__button{
+	position: absolute;
+	top: 158px;
+	left: 69px;
+	background-color: #3056D3;
+	border-radius: 2px;
+	padding: 5px 15px;
+	font-weight: 700;
+	font-size: 11px;
+	line-height: 1.18;
+	color: #FFFFFF;
+	text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.14);
+}
+
+/*Не знаю чи можна так робити чи ні*/
+.dropdown__link_frame::after {
+	content: url(../image/icons/arrow.svg);
+	margin-left: 67px;
+	position: relative;
+	bottom: 1px;
+}
+
+.menu__list {
+	display: flex;
+	position: relative;
+}
+
+.list__link_arrow::after{
+	content: '';
+	background: url(../image/icons/frame.svg) 0 0 no-repeat;
+	width: 11px;
+	height: 6px;
+	display: inline-block;
+	margin-left: 7px;
+	position: relative;
+	bottom: 1px;
+}
+
+.list__item:not(:last-child) {
+	margin-right: 35px;
+}
+
+.header__block{
+	display: flex;
+	align-items: center;
+}
+
+.block div:not(:last-child){
+	margin-right: 20px;
+}
+
+.block img {
+	vertical-align: middle;
+}

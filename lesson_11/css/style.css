@@ -43,6 +43,10 @@ background-color: #E5E5E5;
 
 }
 
+.logo a {
+	display: inline-block;
+}
+
 .category__link{
 	padding-bottom: 70px;
 }

@@ -80,7 +80,6 @@ background-color: #E5E5E5;
 	padding: 22px 0 22px 24px;
 	z-index: 1;
 	transition: all .5s ease .15s;
-	pointer-events: none;
 }
 
 .dropdown::before{
@@ -110,7 +109,6 @@ background-color: #E5E5E5;
 .dropdown__item:hover .sub {
 	opacity: 1;
 	visibility: visible;
-	pointer-events: all;
 }
 
 .dropdown__sub-categories{

@@ -279,11 +279,11 @@
 .wheel__first,
 .wheel__second{
 	position: absolute;
-	width: 150px;
-	height: 150px;
+	width: 130px;
+	height: 130px;
 	background-color: #4f4b4b;
 	border-radius: 50%;
-	border: 10px dashed #000;
+	outline: 10px dashed #000;
 	z-index: 2;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }

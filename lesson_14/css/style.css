@@ -94,9 +94,8 @@ margin-left: 7px;
 }
 
 .posts__column{
-	flex: 0 0 33.333%;
+	flex: 1 0 33.333%;
 	padding: 0px 15px;
-	flex-grow: 1;
 }
 
 .item-post{

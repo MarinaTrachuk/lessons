@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 16</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header></header>
+		<main class="page">
+			<div class="page__shipping shipping">
+				<div class="shipping__container">
+					<div class="shipping__body">
+						<section class="shipping__addres addres">
+							<h2 class="addres__title title">Shipping Address</h2>
+							<form class="addres__form" method="POST" enctype="multipart/form-data" action="#">
+								<div class="addres__email">
+									<label class="addres__label addres__label_required" for="email">Email Address</label>
+									<input required class="addres__input" id="email" autocomplete="off"
+										value="roni_cost@example.com" name="mail" type="email">
+								</div>
+								<div class="addres__password">
+									<label class="addres__label" for="password">Password</label>
+									<input class="addres__input" id="password" autocomplete="off" value="******************"
+										name="password" type="password">
+								</div>
+								<div class="addres__zip">
+									<label class="addres__label" for="zip">Zip/Postal Code</label>
+									<input required class="addres__input" id="zip" autocomplete="off" name="zip-code"
+										type="text">
+								</div>
+								<div class="addres__text">
+									You already have an account with us. Sign in or continue as guest.
+								</div>
+								<div class="addres__button button">
+									<button type="submit">login</button>
+									<a href="#" class="button__link">Forgot Your Password?</a>
+								</div>
+							</form>
+						</section>
+						<div class="shipping__information information">
+							<form class="information__form" method="GET" enctype="multipart/form-data" action="#">
+								<div class="information__name">
+									<label class="information__label information__label_required" for="name">First Name</label>
+									<input required class="information__input" id="name" autocomplete="off" name="name"
+										type="text">
+								</div>
+								<div class="information__last-name">
+									<label class="information__label information__label_required" for="last-name">Last
+										Name</label>
+									<input required class="information__input" id="last-name" autocomplete="off" name="last-name"
+										type="text">
+								</div>
+								<div class="information__company">
+									<label class="information__label" for="company">Company</label>
+									<input required class="information__input" id="company" autocomplete="off" name="company"
+										type="text">
+								</div>
+								<div class="information__addres">
+									<label class="information__label information__label_required" for="street-addres">Street
+										Address</label>
+									<input required class="information__input" id="street-addres" autocomplete="off"
+										name="street-addres" type="text">
+								</div>
+								<div class="information__addres additionally">
+									<input required class="information__input" id="street-addres-1" autocomplete="off"
+										name="street-addres" type="text">
+								</div>
+								<div class="information__addres additionally">
+									<input required class="information__input" id="street-addres-2" autocomplete="off"
+										name="street-addres" type="text">
+								</div>
+								<div class="information__addres additionally">
+									<input required class="information__input" id="street-addres-3" autocomplete="off"
+										name="street-addres" type="text">
+								</div>
+								<div class="information__country">
+									<label class="information__label information__label_required" for="country">Country</label>
+									<input required class="information__input" id="country" autocomplete="off" name="country"
+										type="text">
+								</div>
+								<div class="information__state">
+									<label class="information__label information__label_required"
+										for="state">State/Province</label>
+									<select class="information__list" name="state" id="state">
+										<option value="0">Please select a region, state or province</option>
+										<option value="1">Region 1</option>
+										<option value="2">Region 2</option>
+										<option value="3">Region 3</option>
+										<option value="4">Region 4</option>
+										<option value="5">Region 5</option>
+									</select>
+								</div>
+								<section class="information__methods methods">
+									<h2 class="methods__title title">Shipping Methods</h2>
+									<div class="methods__body">
+										<div class="methods__radio radio">
+											<input checked class="radio__input" id="price-1" required value="$5.00" name="price"
+												type="radio">
+											<label class="radio__label-price radio__label-price_active" for="price-1">$5.00</label>
+											<label class="radio__label-text" for="price-1">Fixed</label>
+											<label class="radio__label-text" for="price-1">Flat Rate</label>
+										</div>
+										<div class="methods__radio methods__radio_border radio">
+											<input checked class="radio__input" id="price-2" required value="$10.00" name="price"
+												type="radio">
+											<label class="radio__label-price radio__label-price_active"
+												for="price-2">$10.00</label>
+											<label class="radio__label-text" for="price-1">Table Rate</label>
+											<label class="radio__label-text" for="price-1">Best Way</label>
+										</div>
+									</div>
+								</section>
+								<div class="information__button button">
+									<button type="submit">next</button>
+									<a href="#" class="button__information-link">Back</a>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="page__billing-details billing">
+						<div class="billing__body">
+							<section class="billing__information">
+								<h2 class="billing__title">Billing Details</h2>
+								<form class="billing__form" method="GET" enctype="multipart/form-data" action="#">
+									<div class="billing__block">
+										<div class="billing__line">
+											<input required class="billing__input" placeholder="First name *" autocomplete="off"
+												name="first-name" type="text">
+											<input required class="billing__input" placeholder="Last name *" autocomplete="off"
+												name="last-name" type="text">
+										</div>
+										<div class="billing__line">
+											<input required class="billing__input" placeholder="Address *" autocomplete="off"
+												name="adress" type="text">
+											<input required class="billing__input" placeholder="Address line 2" autocomplete="off"
+												name="adress-line" type="text">
+										</div>
+										<div class="billing__line">
+											<select class="billing__input billing__input_select" name="country">
+												<option value="0">Country *</option>
+												<option value="1">Country 1</option>
+												<option value="2">Country 2</option>
+												<option value="3">Country 3</option>
+												<option value="4">Country 4</option>
+												<option value="5">Country 5</option>
+											</select>
+											<input required class="billing__input" placeholder="City/Town *" autocomplete="off"
+												name="city" type="text">
+										</div>
+										<div class="billing__line">
+											<input required class="billing__input" placeholder="Postcode / ZIP *"
+												autocomplete="off" name="postcode" type="text">
+											<input required class="billing__input" placeholder="Phone *" autocomplete="off"
+												name="phone" type="tel">
+										</div>
+										<div class="billing__line">
+											<input required class="billing__input" placeholder="Postcode / ZIP *"
+												autocomplete="off" name="postcode" type="text">
+											<input required class="billing__input" placeholder="Phone *" autocomplete="off"
+												name="phone" type="tel">
+										</div>
+										<div class="billing__line">
+											<textarea autocomplete="off" placeholder="Additional information" name="message"
+												class="billing__area"></textarea>
+										</div>
+									</div>
+									<div class="billing__check-block check">
+										<div class="check__box">
+											<input id="check-01" class="check__input" value="yes" name="account" type="checkbox">
+											<label class="check__label" for="check-01">Create Account</label>
+										</div>
+										<div class="check__box">
+											<input id="check-02" class="check__input" value="yes" name="account" type="checkbox">
+											<label class="check__label" for="check-02">Ship to a different address?</label>
+										</div>
+									</div>
+									<div class="billing__cupon cupon">
+										<h2 class="cupon__title">
+											Apply Coupon to get discount!
+										</h2>
+										<div class="cupon__box">
+											<input required class="cupon__input" placeholder="Coupon code" autocomplete="off"
+												name="cupon" type="text">
+											<button type="submit" class="cupon__button">Apply Code</button>
+										</div>
+									</div>
+								</form>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer></footer>
+	</div>
+</body>
+
+</html>

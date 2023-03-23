@@ -330,7 +330,7 @@
 }
 
 .billing__input:focus,
-.billng__area:focus,
+.billing__area:focus,
 .cupon__input:focus {
 	border: 1px solid #3056D3;
 	outline: none;

@@ -1,8 +1,7 @@
 @import url("reset.css");
 @import url("common.css");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap")
-
+@import url("https://fonts.googleapis.com/css?family=Inter:500,600,700&display=swap");
 
 .wrapper {
 	overflow: clip;
@@ -312,6 +311,11 @@
 	min-height: 54px;
 	padding: 15px 25px;
 	border-radius: 7px;
+	font-family: "Inter", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #637381;
 }
 
 .billing__input:focus,
@@ -321,9 +325,8 @@
 	outline: none;
 }
 
-.billing__input,
 .billing__area{
-	font-family: 'Inter';
+	font-family: "Inter", sans-serif;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
@@ -616,4 +619,6 @@
 		background: #0f5eb2;
 	}
 }
+
+
 

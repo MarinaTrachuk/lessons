@@ -529,7 +529,6 @@
 	.billing__line,
 	.billing__area {
 		flex-basis: 100%;
-		font-size: 20px;
 	}
 
 	.cupon__title {

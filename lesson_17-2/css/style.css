@@ -549,14 +549,13 @@
 @media (max-width: 425.98px){
 	.cupon__input {
 		flex: 0 1 100%;
-		font-size: 20px;
 		}
 
 	.cupon__button {
-			font-size: 18px;
-			flex-basis: 100%;
-			padding: 12px 22px;
-			transition: background 0.3s ease;
+		font-size: 18px;
+		flex-basis: 100%;
+		padding: 12px 22px;
+		transition: background 0.3s ease;
 		}
 }
 /*--------------------------------*/

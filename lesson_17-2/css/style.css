@@ -306,17 +306,12 @@
 }
 
 .billing__input{
-	font-family: "Inter", sans-serif;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.5;
-	color: #637381;
 	background: #FFFFFF;
 	border: 1px solid #E7E7E7;
 	min-height: 54px;
 	padding: 15px 25px;
 	border-radius: 7px;
-	appearance: none;
+
 }
 
 .billing__input:focus,
@@ -326,12 +321,14 @@
 	outline: none;
 }
 
-.billing__area{
+.billing__area,
+.billing__input{
 	font-family: "Inter", sans-serif;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
 	color: #637381;
+	appearance: none;
 }
 
 .billing__input_select{
@@ -619,6 +616,4 @@
 		background: #0f5eb2;
 	}
 }
-
-
 

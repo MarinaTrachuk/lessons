@@ -813,6 +813,10 @@ body{
 }
 /*----------------------------------*/
 @media (max-width: 601.98px){
+	.slider__body {
+		margin-right: -40%;
+	}
+	
 	.card__image {
 		flex: 1 0 100%;
 		padding-bottom: 69.686411%; /* 200/287 */

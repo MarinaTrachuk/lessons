@@ -229,8 +229,8 @@ body{
 }
 
 .column-left__list,
-.column-left__first,
-.column-left__second{
+.column-left__first ul,
+.column-left__second ul{
 	display: flex;
 	flex-direction: column;
 	gap: 10px;

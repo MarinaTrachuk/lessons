@@ -172,11 +172,11 @@ body {
 }
 .baner__image {
   position: relative;
-  padding-bottom: 48.484848%; /* 448/924 */
+  padding-bottom: 46.884848%;
   overflow: hidden;
 }
 .baner__image_big {
-  padding-bottom: 100.006682%;
+  padding-bottom: 97.106682%;
 }
 .baner__img {
   position: absolute;

@@ -1,0 +1,237 @@
+@import "_reset.scss";
+@import "_common.scss";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Roboto:wght@300;400&display=swap");
+
+$mainColor: #000000;
+$mainFontSize: 18px;
+$mainFontWeight: 300;
+$mainLineHeight: 1.5;
+$mainFontFamily: "Oswald", sans-serif;
+
+@mixin baner-body($bodyTop: 18.894009%, $bodyLeft: 53.138528%, $bodyWidth: 39.935065%){
+	position: absolute;
+	top: $bodyTop;
+	left: $bodyLeft;
+	max-width: $bodyWidth;
+}
+
+@mixin baner-title($banerTitleFs:48px, $banerTitleLh: 1.29, $banerTitleCol: #000000){
+	font-weight: 600;
+	font-size: $banerTitleFs;
+	line-height: $banerTitleLh;
+	text-transform: uppercase;
+	color: $banerTitleCol;
+}
+
+
+body{
+	font-family: $mainFontFamily;
+	color: $mainColor;
+	font-size: $mainFontSize;
+	font-weight: $mainFontWeight;
+	line-height: $mainLineHeight;
+}
+
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+[class*="__container"] {
+	max-width: 1908px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+
+
+.page {
+	// .page__brands
+	&__brands {
+		padding-top: 50px;
+	}
+}
+.brands {
+	// .brands__container
+	&__container {}
+	// .brands__title
+	&__title {
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 2.83;
+		min-width: 368px;
+		margin-right: -50%;
+		transform: translate(-50%, 0);
+		text-align: center;
+		text-transform: uppercase;
+		color: $mainColor;
+		background-color: #FFFFFF;
+		position: absolute;
+		top: -34px;
+		left: 50%;
+		z-index: 2;
+	}
+	// .brands__items
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 35px;
+		border: 2px solid #C4C4C4;
+		
+		padding: 28px 10px;
+		background-color: #FFFFFF;
+	}
+}
+.barnds {
+	// .barnds__section
+	&__section {
+		position: relative;
+	}
+}
+.brand {
+	// .brand__item
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 235px;
+		min-height: 141px;
+		transition: background 0.3s linear;
+		// .brand__item_active
+		&_active {
+			background: #F0F2F2;
+		}
+		&:hover {
+			background: #F0F2F2;
+		}
+	}
+	// .brand__image
+	&__image {}
+}
+
+
+.page {
+	// .page__baner
+	&__baner {
+		padding-top: 30px;
+	}
+}
+.baner {
+	// .baner__container
+	&__container {}
+	// .baner__section
+	&__section {}
+	// .baner__items
+	&__items {
+		display: grid;
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 29px;
+		row-gap: 30px;
+	}
+	// .baner__item
+	&__item {
+		position: relative;
+		// .baner__item_big
+		&_big {
+			grid-row: span 2;
+		}
+	}
+	// .baner__image
+	&__image {
+		position: relative;
+		padding-bottom: 48.484848%; /* 448/924 */
+		overflow: hidden;
+	}
+	&__image_big{
+		padding-bottom: 100.006682%;
+	}
+	// .baner__img
+	&__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: transform 0.8s linear;
+		&:hover{
+			transform: scale(1.2)
+		}
+	}
+	// .baner__body
+	&__body {
+		@include baner-body;
+	}
+	&__body_big{
+		@include baner-body(47.884187%, 9.297297%, 357px); 
+	}
+	&__body_small{
+		@include baner-body(115px, 94px);
+	}
+	// .baner__title
+	&__title {
+		&:not(:last-child){
+			margin-bottom: 7px;
+		}
+		@media ((min-width: 768px) and (max-width: 1200px)){
+			font-size: 25px;
+		}
+		@media ((min-width: 320px) and (max-width: 768px)){
+			font-size: 18px;
+		}
+		@include baner-title;
+	}
+	&__title_big {
+		@media ((min-width: 768px) and (max-width: 1200px)){
+			font-size: 25px;
+		}
+		@media ((min-width: 320px) and (max-width: 768px)){
+			font-size: 18px;
+		}
+		@include baner-title(96px, 1.15, #131313);
+	}
+	// .baner__subtitle
+	&__subtitle {
+		font-family: "Roboto", sans-serif;
+		font-weight: 300;
+		font-size: 22px;
+		line-height: 1.68;
+		letter-spacing: 0.01em;
+		color: $mainColor;
+		&:not(:last-child){
+			margin-bottom: 51px;
+		}
+		@media ((min-width: 768px) and (max-width: 1200px)){
+			font-size: 18px;
+		}
+		@media ((min-width: 320px) and (max-width: 768px)){
+			font-size: 16px;
+		}
+	}
+	// .baner__button
+	&__button {
+		border: 2px solid #000000;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 27px;
+		display: flex;
+		align-items: center;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		color: #000000;
+		padding: 20px 40px;
+		transition: all 0.3s linear;
+		&:hover{
+			background-color: #000000;
+			color: #FFFFFF;
+		}
+	}
+}

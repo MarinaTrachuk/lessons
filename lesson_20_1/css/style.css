@@ -121,7 +121,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 55px 33px;
-  min-width: 235;
+  min-width: 235px;
 }
 @media (max-width: 1878px) and (min-width: 320px) {
   .brand__item {

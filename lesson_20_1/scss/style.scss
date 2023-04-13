@@ -1036,9 +1036,9 @@ body{
 	// .blog__section
 	&__section {
 		padding-top: 6.815761%; /* 128/1878 */
-		margin-bottom: 146px;
+		margin-bottom: 50px;
 		@media (max-width: 1878px) and (min-width: 320px){
-			margin-bottom: calc( (100vw - 320px)/(768.98 - 320) * (146 - 24) + 24px);
+			margin-bottom: calc( (100vw - 320px)/(768.98 - 320) * (50 - 24) + 24px);
 		}
 	}
 	// .blog__title

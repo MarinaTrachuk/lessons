@@ -639,7 +639,7 @@ body {
 				font-size: calc((100vw - 320px) / (1878 - 320) * (14 - 12) + 12px);
 			}
 			@media (max-width: 425.98px) {
-				width: 100%;
+				flex: 1 1 100%;
 				padding-top: 8px;
 				padding-bottom: 8px;
 			}

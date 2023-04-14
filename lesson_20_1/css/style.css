@@ -757,7 +757,7 @@ body {
 }
 @media (max-width: 425.98px) {
   .shop-card__button button {
-    width: 100%;
+    flex: 1 1 100%;
     padding-top: 8px;
     padding-bottom: 8px;
   }
